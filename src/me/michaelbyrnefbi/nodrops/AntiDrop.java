@@ -74,5 +74,22 @@ public class AntiDrop extends JavaPlugin implements Listener {
 		for (String command : commands3)
 		player.sendMessage(command);
 		return true;
+		
+		@EventHandler
+            public void onPlayerJoin(PlayerJoinEvent e) {
+                    Player p = e.getPlayer();
+                    p.sendMessage(ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" );
+                    p.sendMessage(ChatColor.YELLOW + "Welcome to " + ChatColor.GREEN + "Skyrim Wars!");
+                    p.sendMessage(ChatColor.YELLOW + "To Begin Playing type " + ChatColor.GREEN + "/join");
+                    p.sendMessage(ChatColor.YELLOW + "Choose a race by typing " + ChatColor.GREEN + "/race <race>");
+                    p.sendMessage(ChatColor.YELLOW + "Type /hub To Get Back to The " + ChatColor.GREEN + "Main Hub!");
+                    p.sendMessage(ChatColor.YELLOW + "Check out our website!:" + ChatColor.GREEN + " [Coming Soon!]");
+                    p.sendMessage(ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*" + ChatColor.YELLOW + "*" + ChatColor.GREEN + "*");
+            }
+           
+            public void onEnable() {
+                    Bukkit.getServer().getPluginManager().registerEvents(this, this);
+            }
+    }
 	}
 }
